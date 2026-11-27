@@ -1,0 +1,43 @@
+// Small, trimmed samples copied from real Bond API responses (used only in tests).
+export const movies = [
+  {
+    id: 1,
+    title: 'Dr. No',
+    release_year: 1962,
+    slug: 'dn',
+    eon_production: true,
+    box_office_usd: '59600000',
+    bond_actor: { id: 1, name: 'Sean Connery' },
+    _links: { self: { href: '/movies/dn' }, next: { href: '/movies/gf' } },
+  },
+  {
+    id: 2,
+    title: 'Goldfinger',
+    release_year: 1964,
+    slug: 'gf',
+    eon_production: true,
+    box_office_usd: '124900000',
+    bond_actor: { id: 1, name: 'Sean Connery' },
+    _links: { self: { href: '/movies/gf' }, prev: { href: '/movies/dn' }, next: { href: '/movies/cr67' } },
+  },
+  {
+    id: 26,
+    title: 'Casino Royale',
+    release_year: 1967,
+    slug: 'cr67',
+    eon_production: false,
+    box_office_usd: '41800000',
+    bond_actor: null,
+    _links: { self: { href: '/movies/cr67' }, prev: { href: '/movies/gf' }, next: { href: '/movies/cr' } },
+  },
+  {
+    id: 5,
+    title: 'Casino Royale',
+    release_year: 2006,
+    slug: 'cr',
+    eon_production: true,
+    box_office_usd: '599045960',
+    bond_actor: { id: 6, name: 'Daniel Craig' },
+    _links: { self: { href: '/movies/cr' }, prev: { href: '/movies/cr67' } },
+  },
+]
